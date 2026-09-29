@@ -1,0 +1,40 @@
+# Splunk local files
+*.log
+*.pid
+*.lock
+
+# Splunk runtime and generated files
+splunk/var/
+splunk/etc/auth/
+splunk/etc/passwd
+splunk/etc/users/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*~
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment and secret files
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Credentials and local configuration
+credentials/
+secrets/
