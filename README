@@ -1,0 +1,112 @@
+# 🛡️ Splunk Security Monitoring Lab
+
+### Hands-on Security Monitoring Lab for Detection, Monitoring, Investigation, Log Analysis, and Visualization
+
+![Splunk](https://img.shields.io/badge/Splunk-SIEM-black)
+![SPL](https://img.shields.io/badge/SPL-Search%20%26%20Detection-blue)
+![Linux](https://img.shields.io/badge/Linux-Ubuntu-orange)
+![SOC](https://img.shields.io/badge/SOC-Security%20Monitoring-red)
+![Security Monitoring](https://img.shields.io/badge/Security-Monitoring-green)
+
+---
+
+## 📑 Table of Contents
+
+- [Introduction](#-introduction)
+- [Objectives](#-objectives)
+- [Lab Architecture](#-lab-architecture)
+- [Lab Environment](#-lab-environment)
+- [Security Tools](#-security-tools)
+- [Detection Pipeline](#-detection-pipeline)
+- [Attack & Detection Scenarios](#-attack--detection-scenarios)
+- [Alert Investigation](#-alert-investigation)
+- [MITRE ATT&CK Mapping](#-mitre-attck-mapping)
+- [Repository Structure](#-repository-structure)
+- [Troubleshooting](#-troubleshooting)
+- [Future Improvements](#-future-improvements)
+- [Skills Demonstrated](#-skills-demonstrated)
+- [Conclusion](#-conclusion)
+
+---
+
+# 🔎 Introduction
+
+The **Splunk Security Monitoring Lab** is a hands-on cybersecurity environment built to simulate the activities performed by a Security Operations Center analyst.
+
+The lab provides an environment where security activity can be generated, logged, collected, searched, analyzed, investigated, and visualized using **Splunk**.
+
+The main goal of this project is to gain practical experience with the workflow followed by a SOC analyst:
+
+> **Generate Activity → Collect Logs → Search → Detect → Investigate → Visualize → Respond**
+
+The project focuses on understanding how security events appear inside a SIEM and how an analyst can use **Splunk Search Processing Language (SPL)** to identify suspicious activity.
+
+The lab includes multiple attack and security-testing scenarios and uses real log data to practice security monitoring and investigation.
+
+---
+
+# 🎯 Objectives
+
+The primary objectives of this project are:
+
+- Build a practical SIEM-based security monitoring environment using Splunk.
+- Understand how security logs are generated and collected.
+- Monitor authentication-related activity.
+- Monitor network and web-related activity.
+- Detect suspicious or abnormal security events.
+- Analyze security events using Splunk.
+- Investigate the source, destination, timestamp, and nature of events.
+- Use **Splunk Search Processing Language (SPL)** for security analysis.
+- Identify patterns in authentication and network activity.
+- Create dashboards for security monitoring and visualization.
+- Practice structured alert investigation.
+- Develop practical SOC analyst skills using SIEM technology.
+
+---
+
+# 🏗️ Lab Architecture
+
+The lab consists of security-testing activity, log-generating systems, and centralized security monitoring using Splunk.
+
+```text
+                 ┌──────────────────────┐
+                 │   Security Testing   │
+                 │                      │
+                 │ Reconnaissance       │
+                 │ Authentication       │
+                 │ Network Activity     │
+                 │ Web Activity         │
+                 └──────────┬───────────┘
+                            │
+                            │ Security Activity
+                            ▼
+                 ┌──────────────────────┐
+                 │    Linux / Ubuntu    │
+                 │                      │
+                 │ System Activity      │
+                 │ Authentication Logs  │
+                 │ Network Logs         │
+                 │ Web Logs             │
+                 └──────────┬───────────┘
+                            │
+                            │ Log Data
+                            ▼
+                 ┌──────────────────────┐
+                 │       Splunk         │
+                 │                      │
+                 │ Log Collection       │
+                 │ SPL Searches         │
+                 │ Detection            │
+                 │ Investigation        │
+                 │ Dashboards           │
+                 └──────────┬───────────┘
+                            │
+                            ▼
+                 ┌──────────────────────┐
+                 │ Security Analysis    │
+                 │                      │
+                 │ Event Investigation  │
+                 │ Pattern Analysis     │
+                 │ Visualization        │
+                 │ Incident Analysis    │
+                 └──────────────────────┘
