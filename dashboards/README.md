@@ -167,11 +167,11 @@ The completed dashboard screenshots are stored in the repository:
 
 ### SSH Authentication Dashboard
 
-![SSH Authentication Dashboard](../screenshots/ssh-logs-dashboard.png)
+![SSH Authentication Dashboard](../ssh-logs-dashboard.png)
 
 ### HTTP Logs Dashboard
 
-![HTTP Logs Dashboard](../screenshots/http-logs-dashboard.png)
+![HTTP Logs Dashboard](../http-logs-dashboard.png)
 
 ---
 
